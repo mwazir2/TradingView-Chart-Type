@@ -21,3 +21,14 @@
 	MouseMove xpos, ypos, 50 
 }
 
+/* Draw Rectangle */
+Alt & r::
+{
+	Send "!+R"
+}
+
+/* Hide Objects */
+Ctrl & h::
+{
+	Send "^!h"
+}
