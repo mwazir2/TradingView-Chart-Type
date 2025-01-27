@@ -1,19 +1,23 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.
 
-Shift & a::
+#HotIf WinActive("ahk_exe TradingView.exe")
+
+/* TradingView Version */
+^+a::
 {
 	/* Switch to Candlestick */
 	MouseGetPos &xpos, &ypos
 	/* Modify button coordinate using Window Spy */
-	Click 732, 57
+	Click 693, 57
 	MouseMove xpos, ypos, 50
 }
 
-Shift & s::
+^+s::
 {
 	/* Switch to Line Chart */
 	MouseGetPos &xpos, &ypos
 	/* Modify button coordinate using Window Spy */
-	Click 747, 57
+	Click 727, 57
 	MouseMove xpos, ypos, 50 
 }
+
