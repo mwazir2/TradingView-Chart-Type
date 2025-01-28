@@ -32,3 +32,36 @@ Ctrl & h::
 {
 	Send "^!h"
 }
+
+#HotIf WinActive("ahk_exe chrome.exe")
+
+/* TopstepX Version */
+^+a::
+{
+	/* Switch to Candlestick */
+	MouseGetPos &xpos, &ypos
+	/* Modify button coordinate using Window Spy */
+	Click 631, 130
+	MouseMove xpos, ypos, 50
+}
+
+^+s::
+{
+	/* Switch to Line Chart */
+	MouseGetPos &xpos, &ypos
+	/* Modify button coordinate using Window Spy */
+	Click 658, 130
+	MouseMove xpos, ypos, 50 
+}
+
+/* Draw Rectangle */
+Alt & r::
+{
+	Send "!+R"
+}
+
+/* Hide Objects */
+Ctrl & h::
+{
+	Send "^!h"
+}
