@@ -65,3 +65,9 @@ Ctrl & h::
 {
 	Send "^!h"
 }
+
+/* Minimize Window */
+Alt & n::
+{ 
+	WinMinimize "A" 
+}
