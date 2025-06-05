@@ -8,7 +8,7 @@
 	/* Switch to Candlestick */
 	MouseGetPos &xpos, &ypos
 	/* Modify button coordinate using Window Spy */
-	Click 693, 57
+	Click 693, 60
 	MouseMove xpos, ypos, 50
 }
 
@@ -17,8 +17,17 @@
 	/* Switch to Line Chart */
 	MouseGetPos &xpos, &ypos
 	/* Modify button coordinate using Window Spy */
-	Click 727, 57
+	Click 727, 60
 	MouseMove xpos, ypos, 50 
+}
+
+^+d::
+{
+	/* Switch to Volume Footprint Chart */	
+	MouseGetPos &xpos, &ypos
+	/* Modify button coordinate using Window Spy */
+	Click 770, 60
+	MouseMove xpos, ypos, 50
 }
 
 /* Draw Rectangle */
